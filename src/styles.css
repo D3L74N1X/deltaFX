@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #e2e8f0;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+/* Das Overlay-Fenster muss komplett durchsichtig sein,
+   damit OBS/TikTok Studio nur die Effekte sieht. */
+body.overlay-body,
+body.overlay-body #root {
+  background: transparent !important;
+  overflow: hidden;
+}
+
+input[type="range"] {
+  accent-color: #22d3ee;
+}
